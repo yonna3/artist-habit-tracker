@@ -1,34 +1,27 @@
 [
     {
-        "name": "Anatomy Study",
-        "category": "30",
-        "target_minutes": 30,
-        "created_at": "2026-04-19",
-        "history": {
-            "2026-04-19": 30
-        }
-    },
-    {
-        "name": "Color",
-        "category": "sketch",
-        "target_minutes": 30,
-        "created_at": "2026-04-19",
-        "history": {
-            "2026-04-19": 40
-        }
-    },
-    {
-        "name": "Dreaming",
-        "category": "30",
-        "target_minutes": 30,
-        "created_at": "2026-04-19",
+        "name": "Muscle Study",
+        "category": "Anatomy",
+        "target_minutes": 45,
+        "created_at": "2026-04-20",
         "history": {}
     },
     {
-        "name": "Hhehe",
-        "category": "asdf",
+        "name": "Plein eir",
+        "category": "Color",
         "target_minutes": 30,
-        "created_at": "2026-04-19",
-        "history": {}
+        "created_at": "2026-04-20",
+        "history": {
+            "2026-04-20": 30
+        }
+    },
+    {
+        "name": "Croquis",
+        "category": "Anatomy",
+        "target_minutes": 15,
+        "created_at": "2026-04-20",
+        "history": {
+            "2026-04-20": 10
+        }
     }
 ]

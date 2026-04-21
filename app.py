@@ -76,17 +76,20 @@ class HabitTrackerApp:
         self.refresh_habit_display()
 
     def add_habit_action(self):
-        """Sequence for creating a new habit via user input dialogs."""
+        """Opens dialogs to create a new habit, ensuring they stay in front."""
+        # We pass parent=self.root to every single dialog to keep them on top
         name = simpledialog.askstring("New Habit", "What art habit do you want to start?", parent=self.root)
+        
         if name:
-            category = simpledialog.askstring("Category", "Category (Anatomy, Sketch, Color, etc.)")
-            if not category: category = "Art" # Fallback category
+            category = simpledialog.askstring("Category", "Category (Anatomy, Sketch, etc.)", parent=self.root)
+            if not category: category = "Art"
             
-            target = simpledialog.askinteger("Daily Goal", "How many minutes?", initialvalue=30)
+            target = simpledialog.askinteger("Daily Goal", "How many minutes?", initialvalue=30, parent=self.root)
+            
             if target:
                 new_habit = Habit(name, category, target)
                 self.habits.append(new_habit)
-                self.storage.save_habits(self.habits) # Persistent save
+                self.storage.save_habits(self.habits)
                 self.refresh_habit_display()
 
     def refresh_habit_display(self):
