@@ -26,3 +26,6 @@ During this 7-day sprint, I practiced several key software engineering concepts:
 - `app.py`: Handles the GUI, event loops, and window layout.
 - `models.py`: Contains the core logic for habits and streaks.
 - `storage.py`: Manages the saving and loading of data to the JSON file.
+
+## Future Roadmap
+- Integrated Pomodoro timer for art sessions.
